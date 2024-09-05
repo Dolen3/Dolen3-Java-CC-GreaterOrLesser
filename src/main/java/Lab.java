@@ -9,7 +9,14 @@ public class Lab {
      * @return  If a is less than b, return the string "Lesser". if a is greater than b, return "Greater".
      *          If neither is true, return "Equal". This problem is case-sensitive!
      */
-    public String decide(int a, int b){
-        return "Equal";
+    public String decide(int a, int b) {
+        if (a < b) {
+            return "Lesser";
+        } else if (b < a) {
+            return "Greater";
+        } else {
+            return "Equal";
+        }
     }
+    
 }
